@@ -1,15 +1,38 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
-import "../../styles/home.css";
+import "/workspace/react-hello-webapp/src/styles/home.css";
+import { Card } from "../component/card";
 
 export const Home = () => (
-	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
-		<p>
-			<img src={rigoImage} />
-		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
+  <>
+    <h3 className="mt-5 mx-3 category">Characters <i className="bi bi-person-fill category-icon"></i></h3>
+	<div className="overflow-auto mt-4 mx-4">
+		<div className="row flex-row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />	
+		</div>
 	</div>
+    <h3 className="mt-5 mx-3 category">Locations <i className="bi bi-map category-icon"></i></h3>
+	<div className="overflow-auto mt-4 mx-4">
+		<div className="row flex-row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />	
+		</div>
+	</div>
+    <h3 className="mt-5 mx-3 category">Episodes <i className="bi bi-film category-icon"></i></h3>
+	<div className="overflow-auto mt-4 mx-4">
+		<div className="row flex-row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />	
+		</div>
+	</div>
+  </>
 );

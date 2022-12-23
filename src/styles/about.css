@@ -1,0 +1,12 @@
+.poster {
+    width: 300px;
+    float: left;
+ 
+}
+
+.blockquote {
+    overflow: hidden;
+    margin-top: 200px;
+    margin-left: 5px;
+    margin-bottom: 150px;
+}

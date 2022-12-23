@@ -1,0 +1,31 @@
+#navbar-logo-img {
+    width: 150px;
+}
+
+.bg-personalized {
+    background-color:#1a0634f2;
+}
+
+.navbar-toggler {
+    color: rgba(179, 224, 40, 1);
+    margin-bottom: 7px;
+}
+
+.btn-customized {
+    color: rgba(0, 181, 205, 1);
+}
+
+.btn-customized:hover {
+    color: rgba(179, 224, 40, 1);
+}
+
+.btn-customized-favorite {
+    color: rgba(179, 224, 40, 1);
+    background-color: #1a0634f2;
+}
+
+.btn-customized-bookmark {
+    color: rgba(179, 224, 40, 1);
+    background-color: rgba(0, 181, 205, 1);
+}
+
