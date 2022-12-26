@@ -1,43 +1,27 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			demo: [
-				{
-					title: "ZERO",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "ONE",
-					background: "white",
-					initial: "white"
-				}
-			]
+		characters: [],
+		planets: [],
+		episodes: [],
+
 		},
 		actions: {
-			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
+			getCharacters: async() => {
+				const respone = await fetch ("https://rickandmortyapi.com/api/character");
+				const data = await respone.json();
+				setStore({characters: data.results})
 			},
-			loadSomeData: () => {
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
+			getPlanets: async() => {
+				const respone = await fetch ("https://rickandmortyapi.com/api/location");
+				const data = await respone.json();
+				setStore({planets: data.results})
 			},
-			changeColor: (index, color) => {
-				//get the store
-				const store = getStore();
-
-				//we have to loop the entire demo array to look for the respective index
-				//and change its color
-				const demo = store.demo.map((elm, i) => {
-					if (i === index) elm.background = color;
-					return elm;
-				});
-
-				//reset the global store
-				setStore({ demo: demo });
-			}
+			getEpisodes: async() => {
+				const respone = await fetch ("https://rickandmortyapi.com/api/episode");
+				const data = await respone.json();
+				setStore({episodes: data.results})
+			},
 		}
 	};
 };

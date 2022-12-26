@@ -46,14 +46,14 @@ export const Navbar = () => {
 		  	<i className="bi bi-search btn-customized"></i>
           </button>
         </form>
-        <div class="dropdown ms-3 me-2">
-            <button class="btn btn-secondary dropdown-toggle btn-customized-favorite" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Favorites <i className="bi bi-bookmark"></i><span class="badge btn-customized-bookmark">0</span>
+        <div className="dropdown ms-3 me-2">
+            <button className="btn btn-secondary dropdown-toggle btn-customized-favorite" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Favorites <i className="bi bi-bookmark"></i><span className="badge btn-customized-bookmark">0</span>
             </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
+            <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="#"></a></li>
+                <li><a className="dropdown-item" href="#"></a></li>
+                <li><a className="dropdown-item" href="#"></a></li>
             </ul>
         </div>
       </div>

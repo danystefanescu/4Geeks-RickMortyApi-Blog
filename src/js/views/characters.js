@@ -1,9 +1,16 @@
-import React from "react";
-import "/workspace/react-hello-webapp/src/styles/home.css";
-import { Card } from "../component/card";
+import React, {useContext, useEffect} from "react";
+import { Context } from "../store/appContext";
+import { CardDetail } from "../component/cardDetail";
 
-export const Characters = () => (
-  <>
-    <h1>Characters PAGE</h1>
-  </>
-);
+
+export const Characters = ({characters}) => {
+  const {store, actions} = useContext(Context);
+  //const characters = store.characters;
+  
+  return (
+    <>
+    <CardDetail identifier={characters.id} id={characters.id} name={characters.name} image={characters.image} />
+    </>
+  );
+};
+

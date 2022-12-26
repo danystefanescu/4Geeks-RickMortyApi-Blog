@@ -5,7 +5,6 @@ import "/workspace/react-hello-webapp/src/styles/layout.css";
 import { Home } from "./views/home";
 import { About } from "./views/about";
 import { Characters } from "./views/characters";
-import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -26,10 +25,8 @@ const Layout = () => {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />
-						<Route path="/characters" element={<Characters />} />
+						<Route path="/characters/:theid" element={<Characters />} />
 						<Route path="*" element={<Error />} />
-						<Route path="/single/:theid" element={<Single />} />
-						
 					</Routes>
 					<Footer />
 				</ScrollToTop>

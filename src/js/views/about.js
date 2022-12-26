@@ -12,25 +12,24 @@ export const About = () => (
       />
       <blockquote class="blockquote">
         <p>
-          Rick Sánchez es la definición exacta de "científico loco". Es
-          alcohólico, es un genio, es irresponsable y está loco. Rick acaba de
-          mudarse a casa de su hija Beth y allí recuerda que tiene un nieto
-          llamado Morty. Sin preguntar a nadie, decide que va a obligarle a que
-          le acompañe a todo tipo de aventuras para que el chico se vuelva
-          inteligente como él y no se convierta en un idiota como Jerry, padre
-          de Morty y yerno de Rick. Así, Rick y Morty comienzan a vivir
-          aventuras intergalácticas a pesar de que la familia no quiere que lo
-          sigan haciendo. Poco a poco tienen que intentar encontrar un
-          equilibrio entre su vida familiar y sus viajes a través del espacio y
-          por distintas realidades paralelas, algo que no es fácil para el
-          pequeño Morty que es incapaz de tener una vida normal al margen de su
-          abuelo.
+          Rick Sanchez is the exact definition of "mad scientist." He's an
+          alcoholic, he's a genius, he's irresponsible, and he's crazy. Rick has
+          just moved into his daughter Beth's house and there he remembers that
+          he has a grandson named Morty. Without asking anyone, he decides that
+          he is going to force him to accompany him on all kinds of adventures
+          so that the boy becomes intelligent like him and does not become an
+          idiot like Jerry, Morty's father and Rick's son-in-law. Thus, Rick and
+          Morty begin to live intergalactic adventures despite the fact that the
+          family does not want them to continue doing so. Little by little they
+          have to try to find a balance between their family life and their
+          trips through space and through different parallel realities,
+          something that is not easy for little Morty who is unable to have a
+          normal life apart from his grandfather.
         </p>
         <figcaption class="blockquote-footer">
-          Fuente <cite title="Source Title">Wikipedia ES</cite>
+          Source <cite title="Source Title">Wikipedia US</cite>
         </figcaption>
       </blockquote>
-      
     </figure>
   </div>
 );
