@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { Context } from '../store/appContext';
 import "/workspace/react-hello-webapp/src/styles/card.css";
 
-export const Card = ({identifier, name, image, status, species, gender, location}) => {
+export const Card = ({id, identifier, name, image, status, species, gender, location}) => {
+  const { store, actions } = useContext(Context);
+  const character = store.selectCharacter;
 
   return (
       <>
@@ -14,12 +16,12 @@ export const Card = ({identifier, name, image, status, species, gender, location
             <p className="card-text">
               <i>{name}</i> is a character of gender <i>{gender}</i> and his species is <i>{species}</i> from the planet <i>{location}</i> and is currently <i>{status}</i>.
             </p>
-            <Link to={`/characters/${identifier}`} className="btn btn-customized go-to-button" onClick={(item) => {}}>
+            <Link to={`/characters/${identifier}`} className="btn btn-customized go-to-button" onClick={() => actions.getCharacter({id: id, name: name, image: image, status: status, species: species, gender: gender, location: location})}>
               View details 
             </Link>
-            <button className="btn btn-customized mx-3">
+            <Link className="btn btn-customized mx-3"  onClick={() => actions.favorites({ name, id })}>
               <i className="bi bi-suit-heart-fill like-button" />
-            </button>
+            </Link>
           </div>
         </div>
       </>
