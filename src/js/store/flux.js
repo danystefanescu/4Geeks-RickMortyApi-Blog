@@ -25,6 +25,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			getCharacter: (character) => { setStore({ selectCharacter: character, });
 			},
+			setFavorites: (item) => {
+				const favorites = getStore().favorites;
+				setStore({favorites: [...favorites, item]});
+			},
 		}
 	};
 };

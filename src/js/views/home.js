@@ -28,7 +28,7 @@ export const Home = () => {
 	<div className="overflow-auto mt-4 mx-4">
 		<div className="row d-flex flex-row flex-nowrap g-1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
 		{store.planets.map((item) => {
-				return <CardPlanet key={item.id} name={item.name} type={item.type} dimension={item.dimension} />
+				return <CardPlanet key={item.id} identifier={item.id} name={item.name} type={item.type} dimension={item.dimension} />
 			})};
 		</div>
 	</div>
@@ -36,7 +36,7 @@ export const Home = () => {
 	<div className="overflow-auto mt-4 mx-4">
 		<div className="row d-flex flex-row flex-nowrap g-1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
 		{store.episodes.map((item) => {
-				return <CardEpisode key={item.id} name={item.name} airdate={item.air_date} episode={item.episode} />
+				return <CardEpisode key={item.id} identifier={item.id} name={item.name} airdate={item.air_date} episode={item.episode} />
 			})};	
 		</div>
 	</div>

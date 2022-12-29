@@ -5,7 +5,6 @@ import "/workspace/react-hello-webapp/src/styles/card.css";
 
 export const Card = ({id, identifier, name, image, status, species, gender, location}) => {
   const { store, actions } = useContext(Context);
-  const character = store.selectCharacter;
 
   return (
       <>
@@ -19,7 +18,7 @@ export const Card = ({id, identifier, name, image, status, species, gender, loca
             <Link to={`/characters/${identifier}`} className="btn btn-customized go-to-button" onClick={() => actions.getCharacter({id: id, name: name, image: image, status: status, species: species, gender: gender, location: location})}>
               View details 
             </Link>
-            <Link className="btn btn-customized mx-3"  onClick={() => actions.favorites({ name, id })}>
+            <Link className="btn btn-customized mx-3"  onClick={() => actions.setFavorites({ "name": name, "identifier": identifier })}>
               <i className="bi bi-suit-heart-fill like-button" />
             </Link>
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/navbar.css";
+import { FavCard } from "./favCard";
 
 export const Navbar = () => {
   return (
@@ -25,9 +26,6 @@ export const Navbar = () => {
             <Link to="/">
               <span className="nav-link">Home</span>
             </Link>
-            <Link to="/characters">
-              <span className="nav-link">Characters</span>
-            </Link>
             <Link to="/about">
               <span className="nav-link">About</span>
             </Link>
@@ -43,19 +41,10 @@ export const Navbar = () => {
             aria-label="Search"
           />
           <button className="btn btn-customized" type="submit">
-		  	<i className="bi bi-search btn-customized"></i>
+		  	    <i className="bi bi-search btn-customized"></i>
           </button>
+          <FavCard />
         </form>
-        <div className="dropdown ms-3 me-2">
-            <button className="btn btn-secondary dropdown-toggle btn-customized-favorite" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Favorites <i className="bi bi-bookmark"></i><span className="badge btn-customized-bookmark">0</span>
-            </button>
-            <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#"></a></li>
-                <li><a className="dropdown-item" href="#"></a></li>
-                <li><a className="dropdown-item" href="#"></a></li>
-            </ul>
-        </div>
       </div>
     </nav>
   );
