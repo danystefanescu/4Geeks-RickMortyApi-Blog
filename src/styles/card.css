@@ -1,3 +1,17 @@
+.bg-customized {
+    background-color: rgb(141, 141, 141);
+    border: 1px solid rgb(45, 45, 45);
+    padding-bottom: 5px;
+}
+
+.parent .child {
+    position: relative;
+}
+
+.content-buttons {
+    position: absolute;
+    bottom: 0;
+}
 .btn-customized {
     background-color: #1a0634f2;
 }

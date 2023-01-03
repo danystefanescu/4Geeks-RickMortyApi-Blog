@@ -1,4 +1,4 @@
-import React, { Component, useState, useContext } from "react";
+import React, { Component, useState, useContext, useEffect } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ export const CardDetail = () => {
     return (
         <div className="container bg-dark bg-gradient mt-3 rounded">
             <div className="card mb-3 bg-dark bg-gradient text-light">
-                <div className="row g-0">
+                <div id={selectCharacter.id} className="row g-0">
                     <div className="col-md-7 mt-3">
                         <img className="img-fluid rounded" src={selectCharacter.image} />
                     </div>
