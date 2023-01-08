@@ -18,7 +18,9 @@ const injectContext = PassedComponent => {
 		);
 
 		useEffect(() => {
-			
+			state.actions.getCharacters();
+			state.actions.getLocations();
+			state.actions.getEpisodes();
 		}, []);
 
 		return (

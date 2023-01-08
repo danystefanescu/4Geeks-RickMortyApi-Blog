@@ -1,4 +1,4 @@
-import React, { Component, useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from '../store/appContext';
 import "/workspace/react-hello-webapp/src/styles/card.css";

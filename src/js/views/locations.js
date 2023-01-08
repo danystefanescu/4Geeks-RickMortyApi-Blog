@@ -2,7 +2,7 @@ import React from "react";
 import { CardDetail } from "../component/cardDetail";
 
 
-export const Characters = () => {
+export const Locations = () => {
 
   return (
     <>
@@ -10,4 +10,3 @@ export const Characters = () => {
     </>
     );
 };
-
